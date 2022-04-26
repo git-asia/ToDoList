@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TODO list</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/810add171b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div class="todo">
+    <div class="header">
+        <h1>ToDo List</h1>
+        <input class="todo-input" placeholder="Wpisz treść zadania..." type="text">
+        <button class="btn-add">Add</button>
+        <p class="error-info"></p>
+    </div>
+    <div class="todolist">
+        <h3>Lista zadań:</h3>
+<!--        <p class="error-info" style="color: rgb(0, 132, 255)">Pusto tu ... 📭</p>-->
+        <ul class="todo-ul">
+            <li>Twój pierwszy task
+                <div class="tools">
+                    <button class="complete"><i class="fas fa-check"></i></button>
+                    <button class="edit">EDIT</button>
+                    <button class="delete"><i class="fas fa-times"></i></button>
+                </div>
+            </li>
+       </ul>
+    </div>
+</div>
+
+<div class="popup">
+    <h3>Edytuj zadanie:</h3>
+    <div class="popup-body">
+        <p class="popup-info"></p>
+        <input type="text" class="popup-input" placeholder="Wprowadź nową treść zadania...">
+        <button class="popup-btn accept">Zatwierdź</button>
+        <button class="popup-btn cancel">Anuluj</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
